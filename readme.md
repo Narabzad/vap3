@@ -27,9 +27,9 @@ DROPOUT_RATES = [0.1, 0.2, 0.3]```
 
 If you prefer not to train the model and perform hyperparameter search, you can download the pre-trained models:
 
-[trained model on triviaqa]()
+[trained model on triviaqa](https://drive.google.com/file/d/1BzNdHKL85CV_-VxGDQiD3tcf38HRHOrJ/view?usp=sharing)
 
-[traind model on hotpotqa]()
+[traind model on hotpotqa](https://drive.google.com/file/d/1jUfJemJTgIjnillK9HN0ODwaomkZpcqP/view?usp=sharing)
 
 ## Inference
 ```python vap3_test.py --dataset [triviaqa or hotpotqa] --model_path [model address]```
