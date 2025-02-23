@@ -35,6 +35,8 @@ If you prefer not to train the model and perform hyperparameter search, you can 
 [Download the traind model on hotpotqa](https://drive.google.com/file/d/1jUfJemJTgIjnillK9HN0ODwaomkZpcqP/view?usp=sharing)
 
 ## Inference
+To Infer the model on the test set, run the following command with your trained model:
+
 ```python vap3_test.py --dataset [triviaqa or hotpotqa] --model_path [model address]```
 
 ## baselines
