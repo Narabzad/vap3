@@ -53,7 +53,7 @@ def test(config, ds, mode, model_path):
     MAP = {}
     
     # Open output file
-    output = open(f"bertpe_output/{ds}/{model_path.split('/')[-1]}", "w")
+    output = open(f"output_model_path.split('/')[-1]}", "w")
     
     for batch in valDataloader:
         inputs, query, MAPScore = batch
