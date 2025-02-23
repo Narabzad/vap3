@@ -35,20 +35,28 @@ If you prefer not to train the model and perform hyperparameter search, you can 
 [Download the traind model on hotpotqa](https://drive.google.com/file/d/1jUfJemJTgIjnillK9HN0ODwaomkZpcqP/view?usp=sharing)
 
 ## Inference
-To Infer the model on the test set, run the following command with your trained model:
+To run inference on the test set with your trained model, use the following command:
 
-```python vap3_test.py --dataset [triviaqa or hotpotqa] --model_path [model address]```
+```
+python vap3_test.py --dataset [triviaqa or hotpotqa] --model_path [model address]
+```
 
-This will infer the model on the test set using all original prompts and their variations. At the end, it will also report the correlation between the exact match and the predicted values.
+This will infer the model on the test set using all original prompts and their variations. At the end, it will report the correlation between the exact match and the predicted values.
 
-The output would be
-```prompt_id actual_performance predicted_performance```  
+The output will be saved as:
+```output_{model_path}```
 
-## baselines
-The results of baseline models are available in the ```baseline``` directory. The corresponding codes can be found in ```src/baseline```. Some of the baselines are also borrowed from [PromptSET](https://github.com/Narabzad/prompt-sensitivity) Repository.
+The output format will be:
+```prompt_id actual_performance predicted_performance```
+
+## Baselines
+Baseline model results are available in the ```baseline``` directory. The corresponding code can be found in ```src/baseline```. Some baselines are also borrowed from the [PromptSET](https://github.com/Narabzad/prompt-sensitivity) repository.
 
 ## Evaluation
-To evaluate and obtain accuracy, F1 Precision and Recall run the following command
-It will report the perofrmanceonly on main prompts not the cariations:
+To evaluate and obtain accuracy, F1-score, precision, and recall, run the following command:
 
-```python src/vap3/eval.py --data```  
+```
+python src/vap3/eval.py --dataset [dataset_name] --file_path [outfile_of_inference_step]
+```
+
+This evaluation reports performance only on the main prompts, not their variations.
