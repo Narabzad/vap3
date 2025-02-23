@@ -23,10 +23,12 @@ EPSILON_VALUES = [1e-5, 5e-5, 1e-4, 5e-4, 1e-3, 5e-3]
 ADV_WEIGHTS = [0.1, 0.3, 0.5, 0.7, 0.9]
 LEARNING_RATES = [1e-6, 1e-5, 1e-4]
 BATCH_SIZES = [8, 16, 32]
-DROPOUT_RATES = [0.1, 0.2, 0.3]```
+DROPOUT_RATES = [0.1, 0.2, 0.3]
+```
 
 
 If you prefer not to train the model and perform hyperparameter search, you can download the pre-trained models:
+
 
 [trained model on triviaqa](https://drive.google.com/file/d/1BzNdHKL85CV_-VxGDQiD3tcf38HRHOrJ/view?usp=sharing)
 
