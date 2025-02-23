@@ -1,0 +1,25 @@
+{
+    "learning_rate": 3.054675062952673e-05,
+    "dataPath": ".",
+    "outputPath": "model/triviaqa/",
+    "outputName": "dev",
+    "bertModel": "bert-base-uncased",
+    "seed_val": 42,
+    "Doc_per_query": 10,
+    "epochs": 2,
+    "epsilon_parameter": 1e-08,
+    "depth": 10,
+    "metrics": [
+        "ndcg",
+        "map",
+        "precision"
+    ],
+    "num_labels": 1,
+    "hidden_dropout_prob": 0.2,
+    "num_warmup_steps": 0,
+    "batch": 8,
+    "batch_size": 8,
+    "dropout": 0.3235555546804832,
+    "warmup_steps": 339,
+    "epsilon": 8.231361319702481e-09
+}
