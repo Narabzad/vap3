@@ -1,4 +1,4 @@
-# **VAP3: Variation-Aware Prompt Performance Prediction**  
+#VAP3: Variation-Aware Prompt Performance Prediction
 This repository contains **VAP3**, a **variation-aware prompt performance prediction** method that leverages prompt variations and employs **adversarial training**.
 
 ## **Training**  
