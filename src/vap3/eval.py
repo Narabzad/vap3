@@ -11,13 +11,8 @@ def evaluate_model(dataset: str, file_path: str):
     warnings.filterwarnings("ignore", category=FutureWarning)
     
     print("AUC Accuracy  F1 Accuracy  Recall Precision")
-    data_file = os.path.join(f'bertpe_output_main_only/{dataset}', file_path)
     
-    if not os.path.exists(data_file):
-        print(f"File {data_file} not found.")
-        return
-    
-    with open(data_file, 'r') as f:
+    with open(file_path, 'r') as f:
         valid_lines = [line for line in f if len(line.split()) == 3]
     
     if len(valid_lines) == 0:
