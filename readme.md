@@ -14,8 +14,7 @@ The `data` directory includes training and test sets for HotpotQA and TriviaQA:
 
 ## 🚀 Training  
 To perform a **hyperparameter search**, run:  
-```bash
-python vap3_train_adversarial_hyper_search.py
+```python vap3_train_adversarial_hyper_search.py```
 
 If you prefer not to train the model and perform hyperparameter search, you can download the pre-trained models:
 
