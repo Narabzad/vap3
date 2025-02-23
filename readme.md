@@ -39,8 +39,9 @@ To Infer the model on the test set, run the following command with your trained 
 
 ```python vap3_test.py --dataset [triviaqa or hotpotqa] --model_path [model address]```
 
-## baselines
-The results of baseline models are available in the ```baseline``` directory. The corresponding code can be found in ```src/baseline```.
+This will infer the model on the test set using all original prompts and their variations. At the end, it will also report the correlation between the exact match and the predicted values.
 
+## baselines
+The results of baseline models are available in the ```baseline``` directory. The corresponding codes can be found in ```src/baseline```. Some of the baselines are also borrowed from [PromptSET](https://github.com/Narabzad/prompt-sensitivity) Repository.
 
 ## Evaluation
